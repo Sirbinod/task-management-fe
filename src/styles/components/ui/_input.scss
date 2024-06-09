@@ -1,0 +1,97 @@
+.input-wrapper {
+  width: 100%;
+
+  .ant-form-item-row {
+    width: 100%;
+  }
+  .ant-form-item-control-input {
+    width: 100%;
+    background: $extra-white;
+  }
+  // .ant-input-affix-wrapper {
+  .ant-input {
+    background: transparent;
+    border: none;
+    height: 5rem !important;
+    border: 1px solid $medium-grey;
+    @include border-radius;
+    @include flex-center;
+    &:hover {
+      border: 1px solid $main-blue;
+    }
+  }
+  .ant-input-affix-wrapper {
+    background: transparent;
+    border: none;
+    height: 5rem !important;
+    border: 1px solid $medium-grey;
+    @include border-radius;
+    @include flex-center;
+    &:hover {
+      border: 1px solid $main-blue;
+    }
+    .ant-input {
+      &:hover {
+        border: none !important;
+      }
+    }
+
+    .ant-input-prefix {
+      height: 3.8rem;
+      color: $medium-grey;
+      margin-inline-end: 1rem;
+    }
+  }
+  .ant-input-status-error {
+    border: 1px solid $error;
+    .ant-input {
+      &::placeholder {
+        color: $error !important;
+      }
+    }
+  }
+
+  .ant-input-status-warning {
+    border: 1px solid $warning;
+    .ant-input {
+      &::placeholder {
+        color: $warning;
+      }
+    }
+  }
+
+  .date-input {
+    height: 5rem;
+    border: 1px solid $medium-grey;
+    &::before {
+      // content: attr(placeholder) !important;
+      color: $medium-grey;
+    }
+    &:invalid::-webkit-datetime-edit {
+      color: $medium-grey;
+    }
+  }
+  .ant-input {
+    background: transparent !important;
+    width: 100% !important;
+    font-family: $sofia-font;
+
+    //   text-transform: capitalize;
+    &::placeholder {
+      background-color: transparent;
+      @include input-placeholder;
+      color: $medium-grey;
+    }
+    .ant-input-prefix {
+      background: transparent;
+    }
+  }
+}
+
+.ant-form-item-has-error {
+  .ant-input {
+    &::placeholder {
+      color: $error;
+    }
+  }
+}

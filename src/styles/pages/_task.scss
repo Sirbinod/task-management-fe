@@ -1,0 +1,18 @@
+.task {
+  &__header {
+    @include flex-between;
+    &__contain {
+      @include flex-center;
+      .status-btn {
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 2.21rem;
+        color: $light-black;
+      }
+      .status-active {
+        color: $main-blue;
+        background: #dee6f7;
+      }
+    }
+  }
+}

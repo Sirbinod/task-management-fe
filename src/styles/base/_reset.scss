@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: $sofia-font, 'Helvetica-Nue', 'helvetica', Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: normal;
+  line-height: 1.5;
+  background: #fff;
+
+  // @include respond(md) {
+  //   font-size: 1.6rem;
+  // }
+}
+
+a {
+  text-decoration: none;
+}
+p {
+  font-family: $sofia-font;
+}
+
+.hidden {
+  display: none !important;
+}
+.visible {
+  display: block !important;
+}
+
+.page {
+  background-color: $color-natural--3;
+}
+
+.ant-popover-title {
+  display: none !important;
+}
+
+// vehicle form field
+.custom-input-container {
+  .ant-form-item-row {
+    position: relative;
+  }
+
+  .ant-form-item-label {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    transition: all 0.2s ease;
+    pointer-events: none;
+    padding: 0 5px;
+    background: $extra-white;
+    label {
+      color: $medium-grey !important;
+      text-transform: capitalize;
+      font-size: 1.4rem;
+      font-weight: 400;
+    }
+    label::after {
+      margin-inline-end: 0px !important;
+    }
+  }
+}
+
+.focused .ant-form-item-label,
+.custom-input-container.ant-form-item-has-success input:not(:placeholder-shown) ~ .ant-form-item-label,
+.custom-input-container.ant-form-item-has-success .ant-form-item-label {
+  top: 0 !important;
+  left: 10px;
+  font-weight: 700 !important;
+  background: linear-gradient(to bottom, #ffffff 54%, $extra-white 46%);
+  label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: $black !important;
+    margin-left: 2px !important;
+  }
+}
+
+.ant-form-item-has-error {
+  .ant-form-item-label {
+    top: 36%;
+    label {
+      color: $error !important;
+    }
+  }
+}
+// end vehicle form field

@@ -1,0 +1,15 @@
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.4rem;
+
+  .page-title {
+    font-size: 2rem;
+    font-family: $sofia-font;
+    color: $black;
+  }
+  .ant-btn {
+    width: 12rem;
+  }
+}

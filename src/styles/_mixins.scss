@@ -1,0 +1,47 @@
+@mixin icon__button {
+  cursor: pointer;
+  border-radius: $border--radius-3;
+  background-color: $transparent--color-2;
+  color: $color-natural--1;
+}
+
+@mixin scrollbar {
+  &::-webkit-scrollbar {
+    width: 2px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: none;
+    box-shadow: none;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $color-natural--5;
+    outline: none;
+    border-radius: 43px;
+  }
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin input-placeholder {
+  font-family: $sofia-font;
+  color: $medium-grey;
+  text-transform: capitalize;
+}
+@mixin border-radius {
+  border-radius: 0.5rem;
+}

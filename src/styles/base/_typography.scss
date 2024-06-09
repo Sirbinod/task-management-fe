@@ -1,0 +1,90 @@
+
+@mixin heading($size, $weight) {
+  font-size: $size;
+  line-height: 140%;
+  font-weight: $weight;
+}
+
+@mixin body-text {
+  font-size: 1.4rem;
+  line-height: 140%;
+  font-weight: 400;
+}
+
+@mixin caption {
+  font-size: 1.3rem;
+  line-height: 140%;
+  font-weight: 400;
+}
+
+@mixin tag {
+  font-size: 1rem;
+  line-height: 140%;
+  font-weight: 700;
+}
+
+@mixin button {
+  font-size: 1.2rem;
+  line-height: 140%;
+  font-weight: 700;
+}
+
+@mixin h1 {
+  @include heading(5.2rem, 700);
+}
+
+@mixin h2 {
+  @include heading(2.9rem, 700);
+}
+
+@mixin h3 {
+  @include heading(2.3rem, 700);
+}
+
+@mixin h4 {
+  @include heading(2.0rem, 700);
+}
+
+@mixin h5 {
+  @include heading(1.8rem, 700);
+}
+
+@mixin h6 {
+  @include heading(1.6rem, 700);
+}
+
+h1 {
+  @include heading(5.2rem, 700);
+}
+h2 {
+  @include heading(2.9rem, 700);
+}
+h3 {
+  @include heading(2.3rem, 700);
+}
+h4 {
+  @include heading(2.0rem, 700);
+}
+h5 {
+  @include heading(1.8rem, 700);
+}
+h6 {
+  @include heading(1.6rem, 700);
+}
+
+p,
+div {
+  @include body-text;
+}
+
+.caption {
+  @include caption;
+}
+
+.tag {
+  @include tag;
+}
+
+.button {
+  @include button;
+}

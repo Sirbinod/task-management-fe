@@ -1,0 +1,55 @@
+$border-radius: 6px;
+$border-radius-1: 1px;
+$border-radius-2: 2px;
+$border--radius-3: 3px;
+$border-radius-4: 4px;
+$border-radius-5: 5px;
+$border-radius-8: 8px;
+$border-radius-10: 10px;
+
+// Breakpoints
+$breakpoints-sm: 480px;
+$breakpoints-md: 768px;
+$breakpoints-lg: 1024px;
+$breakpoints-xl: 1200px;
+$breakpoints-max: 1440px;
+$cardSlider-maxWidth: 1363px;
+$banner-width: 1408px;
+$auth-max__layout: 1062px;
+
+// fONT fAMILY
+$sofia-font: "SofiaPro";
+
+// Font Sizes
+$font-10: 1rem;
+$font-11: 1.1rem;
+$font-12: 1.2rem;
+$font-13: 1.3rem;
+$font-14: 1.4rem;
+$font-16: 1.6rem;
+$font-18: 1.8rem;
+$font-20: 2.0rem;
+$font-9: 0.9rem;
+$font-44: 4.4rem;
+$font-29: 2.9rem;
+
+// Font Weight
+$font-400: 400;
+$font-500: 500;
+$font-600: 600;
+$font-700: 700;
+
+$border-transparent-medium: 1px solid transparent;
+$border-transparent-bold: 2px solid transparent;
+
+$transition-duration: 0.4s;
+$transition-duration-ms: 1.2;
+$transition-type: ease-in-out;
+
+$box-shadow--1: 0px 0px 10px 0px rgba(0, 0, 0, 0.08);
+$transparent--color-1: rgba(33, 33, 33, 0.8);
+$transparent--color-2: rgba(33, 33, 33, 0.5);
+$transparent--color-3: rgba(33, 33, 33, 0.3);
+$box-shadow--popover: 0px 0px 16px 0px rgba(33, 33, 33, 0.08);
+$box-shadow--header: 0px 5px 10px 0px rgba(111, 110, 110, 0.06);
+$box-shadow--filter: 0px 5px 20px 0px rgba(0, 0, 0, 0.1);

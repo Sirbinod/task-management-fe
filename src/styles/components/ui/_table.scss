@@ -1,0 +1,33 @@
+.table-wrapper {
+  border: 1px solid $medium-blue;
+  background-color: $color-natural--1;
+  border-radius: 0.5rem;
+  .table-header {
+    padding: 1.6rem;
+  }
+  .table-conatin {
+    min-height: 60.5vh;
+    height: 60.5vh;
+    overflow: overlay;
+    .ant-table-wrapper {
+      .ant-table-thead {
+        .ant-table-cell {
+          background: $extra-white;
+          border-top: 1px solid $medium-white;
+        }
+      }
+      .ant-table-tbody {
+        color: $medium-black;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 2.21rem;
+      }
+    }
+  }
+}
+
+.action-item {
+  .ant-space-item {
+    line-height: 100%;
+  }
+}

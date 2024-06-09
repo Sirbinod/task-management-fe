@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 1.2rem 3.2rem;
+  border-bottom: 1px solid #d7deea;
+  position: sticky;
+  top: 0;
+  z-index: 1111;
+  width: 100%;
+  &__hamburger {
+    cursor: pointer;
+    img {
+      height: 1.6rem;
+      object-fit: cover;
+    }
+  }
+  &__logo-link {
+    @include h1;
+  }
+  &__user-menu {
+    cursor: pointer;
+  }
+}

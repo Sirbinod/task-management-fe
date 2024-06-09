@@ -1,0 +1,84 @@
+.button-wrapper {
+  width: 100%;
+  padding: 0.8rem 1.6rem;
+  font-family: $sofia-font;
+  @include flex-center;
+  @include border-radius;
+  gap: 10px;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.button-primary {
+  background-color: $main-blue;
+  border: none;
+  color: $white;
+  &:hover,
+  &:active {
+    color: $white !important;
+    background-color: $dark-blue !important;
+  }
+  &:disabled {
+    background-color: $dark-gray !important;
+    cursor: not-allowed;
+  }
+}
+
+.button-secondary {
+  background-color: $white;
+  border: 1px solid $main-blue;
+  color: $main-blue;
+  &:hover {
+    background-color: #dee6f7;
+  }
+  &:active {
+    background-color: #bed8fe;
+  }
+  &:disabled {
+    border: 1px solid $dark-gray;
+    color: $dark-gray;
+    background-color: $white !important;
+    cursor: default;
+  }
+}
+
+.button-ternary {
+  background-color: $white;
+  border: none;
+  color: $main-blue;
+  &:hover {
+    background-color: #dee6f7;
+  }
+  &:active {
+    background-color: #bed8fe;
+  }
+  &:disabled {
+    color: $dark-gray;
+    background-color: $white !important;
+    cursor: default;
+  }
+}
+.button-fourthiary {
+  background-color: $extra-green;
+  border: none;
+  color: $white;
+  &:hover,
+  &:active {
+    background-color: $dark-blue;
+    border: $extra-green;
+  }
+  &:disabled {
+    background-color: $dark-gray !important;
+    cursor: not-allowed;
+  }
+}
+.btn-sm {
+  height: 3.8rem;
+}
+.btn-md {
+  height: 4.2rem;
+}
+.btn-lg {
+  height: 5rem;
+}

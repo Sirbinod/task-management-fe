@@ -1,0 +1,218 @@
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  row-gap: 24px;
+  flex-wrap: wrap;
+}
+
+.tabButton__reverse {
+  .tabButton__tabList {
+    flex-direction: row-reverse;
+    @media screen and (max-width: $breakpoints-sm) {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      gap: 16px;
+    }
+  }
+}
+
+.container {
+  max-width: $breakpoints-max;
+  margin: auto;
+  padding: 0px 80px;
+  padding-top: 56px;
+
+  @media screen and (max-width: $breakpoints-md) {
+    padding: 0px;
+    padding-left: 24px;
+    padding-top: 40px;
+  }
+  @media screen and (max-width: $breakpoints-sm) {
+    padding-left: 16px;
+  }
+  &--pb {
+    padding-bottom: 56px;
+
+    @media screen and (max-width: $breakpoints-md) {
+      padding-bottom: 40px;
+    }
+  }
+  &--right {
+    @media screen and (max-width: $breakpoints-md) {
+      padding: 0px;
+      padding-left: 24px;
+      padding-right: 24px;
+      padding-top: 40px;
+    }
+    @media screen and (max-width: $breakpoints-sm) {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+  &--sm {
+    padding-top: 24px;
+  }
+  &__bottom--sm {
+    padding-bottom: 24px;
+  }
+}
+
+.brand-flex {
+  justify-content: center;
+  gap: 19.67px;
+  @media screen and (max-width: $breakpoints-md) {
+    gap: 18.67px;
+  }
+  @media screen and (max-width: $breakpoints-sm) {
+    column-gap: 6px;
+    row-gap: 24px;
+  }
+}
+
+.ant-modal {
+  .ant-modal-close {
+    top: 20px !important;
+    inset-inline-end: 20px !important;
+  }
+  .ant-modal-content {
+    padding: 24px !important;
+  }
+}
+
+.ant-drawer {
+  display: block;
+  .ant-drawer-wrapper-body {
+    .ant-drawer-header {
+      padding: 16px 16px 0 !important;
+      border-bottom: none !important;
+    }
+    .ant-drawer-header-title {
+      position: relative;
+      .ant-drawer-close {
+        position: absolute;
+        right: 4px;
+      }
+    }
+    .ant-drawer-body {
+      @media (max-width: 768px) {
+        padding: 0 !important;
+      }
+    }
+  }
+}
+.text__tick {
+  &::before {
+    content: url('/images/icons/greenTick.svg');
+    display: inline-block;
+    vertical-align: text-top;
+    margin-right: 8px;
+  }
+}
+
+.full__container {
+  margin: auto;
+  margin-top: 56px;
+  background-color: $color-yellow-11;
+  @media screen and (max-width: $breakpoints-md) {
+    margin-top: 40px;
+  }
+  .container {
+    padding-bottom: 56px;
+    @media screen and (max-width: $breakpoints-md) {
+      padding-bottom: 40px;
+    }
+  }
+}
+
+.container__right {
+  .tabButton__tabList,
+  .heading-flex,
+  .ant-tabs-nav {
+    padding-right: unset;
+    @media screen and (max-width: $breakpoints-md) {
+      padding-right: 24px;
+    }
+    @media screen and (max-width: $breakpoints-sm) {
+      padding-right: 16px;
+    }
+  }
+}
+
+.commonLayout {
+  &__goToTop {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    z-index: 99;
+    &--shown {
+      display: inline-block;
+    }
+    &--hidden {
+      display: none;
+    }
+  }
+}
+
+.bg-grey {
+  background-color: $color-natural--3;
+}
+
+.ant-form-item {
+  margin-bottom: 0 !important;
+  // .ant-input {
+  //   height: 4.8rem !important;
+  //   border: none;
+  // }
+
+  .ant-form-item-label {
+    padding: 0;
+  }
+  label {
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.82rem;
+    margin-bottom: 0.4rem;
+    &::before {
+      display: none !important;
+    }
+  }
+}
+
+/* Change autocomplete styles in WebKit */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  background-color: #f5f8ff;
+  -webkit-box-shadow: 0 0 0px 1000px #f5f8ff inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+input:active {
+  background: #f5f8ff;
+}
+
+.ant-modal-mask {
+  z-index: 1119 !important;
+}
+.ant-modal-wrap {
+  z-index: 1119 !important;
+}
+
+.ant-drawer-header-title {
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  .ant-drawer-title {
+    font-size: 2.4rem;
+  }
+}
+
+.ant-image-preview-operations-wrapper,
+.ant-image-preview-mask,
+.ant-image-preview-wrap {
+  z-index: 1111 !important;
+}
