@@ -1,6 +1,6 @@
-## Crypto Notifier
+## Task Management
 
-**Develop a notification system for cryptocurrencies that monitors price changes and alerts users based on their watchlist.**
+**Develop a task management application with authentication**
 
 ### Table of Contents
 
